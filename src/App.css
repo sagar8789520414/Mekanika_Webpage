@@ -1,0 +1,339 @@
+.head {
+  height: 5rem;
+  width: 100vw;
+  background-color: black;
+  top: 0px;
+}
+.img {
+  height: 4rem;
+  width: 4rem;
+ 
+}
+.navbar{
+  height: 7rem;
+width: 100vw;
+ position: fixed;
+ top:0px;
+ border: 2px solid black;
+
+}
+.container-fluid{
+  background-color: rgb(2, 2, 2);
+  height: 7rem;
+  
+}
+.logo{
+  height: 7rem;
+  width: 7rem;
+}
+.navbar-nav{
+  margin-left: 10rem;
+}
+.nav-item{
+   margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.25rem;
+  color: hsl(43, 74%, 49%);
+}
+.btn {
+  background-color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 2px solid goldenrod;;
+  color: goldenrod;
+  margin-right: 4rem;
+}
+ .form-control{
+  width: 15rem;
+border: 1.2px solid goldenrod;
+ background-color: rgba(52, 51, 51, 0.775);
+} 
+a:hover{
+  background-color: goldenrod;
+  opacity: 0.8;
+}
+.btn:hover{
+  background-color: goldenrod;
+  color: black;
+  border: 2px solid goldenrod;
+}
+a{
+  border-radius: 10px;
+}
+.heading{
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 10rem;
+  height: 11rem;
+  background: linear-gradient(45deg, rgb(1, 1, 1) , goldenrod ); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For other browsers */
+  font-family:  sans-serif;
+  
+    white-space: nowrap; /* Ensures the text stays in a single line */
+    animation: moveRight 3s linear 1;
+}
+.shotHead{
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 0;
+  color: rgb(46, 44, 44);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+ /* Ensures the text stays in a single line */
+  animation: moveLeft 3s linear 1;
+}
+.regisBtn{
+  background-color: black;
+  border: 2px solid goldenrod;
+  color: goldenrod;
+  border-radius: 1rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-left: 60vw;
+  width: 7rem;
+}
+.regisBtn:hover{
+  background-color: goldenrod;
+  opacity: 0.7;
+  color: black;
+}
+.readBtn:hover{
+  background-color: goldenrod;
+  opacity: 0.7;
+  color: black;
+}
+@keyframes moveLeft {
+
+  0% {
+      transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+}
+
+}
+    
+@keyframes moveRight {
+  0% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(0);
+  }
+ 
+}
+@keyframes showElement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.regisBtn {
+  opacity: 0; /* Start hidden */
+  animation: showElement 1.5s forwards; /* 2s delay before showing */
+  animation-delay: 2s; /* Delay before the animation starts */
+}
+.readBtn{
+  background-color: black;
+  border: 2px solid goldenrod;
+  color: goldenrod;
+  border-radius: 1rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 8rem;
+  opacity: 0; /* Start hidden */
+  animation: showElement 1.5s forwards; /* 2s delay before showing */
+  animation-delay: 2s; /* Delay before the animation starts */
+}
+.block{
+  height: 35rem;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0; /* Start hidden */
+  animation: showElement 1s forwards; /* 2s delay before showing */
+  animation-delay: 0.5s; /* Delay before the animation starts */
+}
+.mergePic{
+   height: 33rem;
+   width: 33rem;
+   background-image: url("./assets/MergePic.png");
+   background-size: cover;
+   opacity: 0.8;
+   box-shadow: 4px 6px 10px goldenrod;
+  }
+  .about{
+    height: 33rem;
+    width: 33rem;
+    margin-left: 1.5rem;
+  }
+.aboutHead{
+  font-size: 4.5rem;
+  background: linear-gradient(45deg, rgb(1, 1, 1), goldenrod 30%); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For other browsers */
+  font-family:  sans-serif;
+  
+}
+.aboutPara{
+  font-size: 1.35rem;
+  color: rgb(70,70,70);
+}
+.icons{
+  font-size: 2rem;
+  color: goldenrod;
+  opacity: 0.6;
+}
+.icons:hover{
+  background-color: black;
+  opacity: 1;
+}
+.footer{
+  height: 13rem;
+  width: 100vw;
+  background: linear-gradient(270deg, rgb(1, 1, 1) , goldenrod );
+  margin-top: 1rem;
+  opacity: 0.8;
+  display: flex;
+  justify-content:flex-start;
+    
+  white-space: nowrap; /* Ensures the text stays in a single line */
+  animation: moveRight 2s linear 1;
+}
+.footer.visible {
+  bottom: 0; /* Slide into view */
+}
+.iitLogo{
+  background-image: url("./assets/logoIITKgp-removebg-preview.png");
+  background-size: cover;
+  height: 8rem;
+  width: 8rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.iitDetails{
+  margin: 1.5rem;
+}
+.paraDetails{
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  color: rgb(45, 41, 41);
+}
+.iconsIITKgp{
+  font-size: 1.25rem;
+  color: black;
+  opacity: 0.8;
+  margin-top: 0;
+}
+hr{
+  margin-top: 0;
+}
+.iconsIITKgp:hover{
+ opacity: 1;
+ background-color: rgb(170, 128, 22);
+}
+.wings{
+  height: 35rem;
+  width: 80vw;
+  margin-left: 10vw;
+}
+.wingHeading{
+   font-size: 3rem;
+   text-align: center;
+  background: linear-gradient(45deg, rgb(26, 25, 25) , goldenrod 1%); /* Gradient colors */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text; /* For other browsers */
+   font-family:  sans-serif;
+   opacity: 0.8;
+   margin-top: 6rem;
+}
+.cards{
+  height: 32rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card{
+  width: 22vw;
+  height: 25rem;
+margin-top: 1.75rem;
+border-radius: 2rem;
+align-items: center;
+text-align: center;
+background: rgb(209, 202, 182) ;
+opacity: 0.7;
+color: rgb(46, 44, 44);
+}
+.card:hover{
+box-shadow: 6px 10px 16px goldenrod;
+}
+.cardIcon{
+  height: 9rem;
+  width: 22vw;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  z-index: 100;
+  background-size: cover;
+  margin-top: -0.5rem;
+}
+.cardIcon1{
+  background-image: url("./assets/design team card image.png");
+
+}
+.cardIcon2{
+  background-image: url("./assets/core team Card img.avif");
+
+}
+.cardIcon3{
+  background-image: url("./assets/Web team card img.png");
+}
+.card-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.cardBtn1{
+  margin-left: 3.5rem;
+  margin-top: 1.5rem;
+}
+.cardBtn2{
+  margin-left: 3.5rem;
+  margin-top: 1.5rem;
+}
+.cardBtn3{
+  margin-left: 3.5rem;
+}
+.btn:hover{
+  box-shadow: 2px 4px 8px black ;
+}
+.slide-enter {
+  transform: translateX(-80%);
+}
+.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+.show-enter{
+  transform: translateX(87%);
+}
+.show-enter-active{
+  transform: translateX(0);
+  transition: transform 800ms ease-in-out;
+}
